@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anomaly.ML - API</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <nav class="glass-nav">
+    <div class="logo">Anomaly.ML</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="docs.html">Documentation</a></li>
+      <li><a href="api.html" class="active-link">API</a></li>
+      <li><a href="pricing.html" class="btn-glass">Start Building</a></li>
+    </ul>
+  </nav>
+
+  <main class="glass-hero inner-glass-page">
+    <section class="glass-card page-intro">
+      <h1>Developer API</h1>
+      <p>Fast endpoints for transaction scoring, event streaming, and model feedback.</p>
+    </section>
+
+    <section class="api-list">
+      <article class="glass-card api-item">
+        <div>
+          <span class="api-method">POST</span>
+          <h3>/v1/score</h3>
+        </div>
+        <p>Returns a risk score and explanation details for each transaction batch.</p>
+      </article>
+      <article class="glass-card api-item">
+        <div>
+          <span class="api-method">POST</span>
+          <h3>/v1/events</h3>
+        </div>
+        <p>Sends model events and decision metadata to your monitoring tools.</p>
+      </article>
+      <article class="glass-card api-item">
+        <div>
+          <span class="api-method">PATCH</span>
+          <h3>/v1/feedback</h3>
+        </div>
+        <p>Submit analyst outcomes so the model can improve accuracy and reduce false positives over time.</p>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
